@@ -5,21 +5,21 @@
 class Mdql < Formula
   desc "Schema-driven CRUD + FTS + wiki graph over markdown notes"
   homepage "https://github.com/notambourine/mdql"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/notambourine/mdql/releases/download/v0.1.0/mdql_darwin_amd64.tar.gz"
-      sha256 "aec76451709ee1daf42b71a1fc692b6f88e4b7dd3f4dcb8a97abebd78463b997"
+      url "https://github.com/notambourine/mdql/releases/download/v0.1.1/mdql_darwin_amd64.tar.gz"
+      sha256 "447642b483553f40fd674e02186ffc89be01d21015e5f336a6959c757c6531e0"
 
       define_method(:install) do
         bin.install "mdql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/notambourine/mdql/releases/download/v0.1.0/mdql_darwin_arm64.tar.gz"
-      sha256 "4490234d8e45842c9300057e89fece727dd2a1e6575da8baa7dc0356b41c4efd"
+      url "https://github.com/notambourine/mdql/releases/download/v0.1.1/mdql_darwin_arm64.tar.gz"
+      sha256 "232a8094e9ec11cee7e0e4c21235c50f65bad07ca7037e20a809250039870d29"
 
       define_method(:install) do
         bin.install "mdql"
@@ -29,15 +29,15 @@ class Mdql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notambourine/mdql/releases/download/v0.1.0/mdql_linux_amd64.tar.gz"
-      sha256 "0dcc62c98bdc6b93e6f1b51297ba7f5cfea38ed5c0c9293ab1345447d3b8008e"
+      url "https://github.com/notambourine/mdql/releases/download/v0.1.1/mdql_linux_amd64.tar.gz"
+      sha256 "8a31fcaa594a6cae8740ebab8437aae4c0c13a0adcadd84204434e9da07908af"
       define_method(:install) do
         bin.install "mdql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/notambourine/mdql/releases/download/v0.1.0/mdql_linux_arm64.tar.gz"
-      sha256 "8eb33471d05e7196381b7f39c4d5c62838dcad9e4e2fa724a6570895a5090f48"
+      url "https://github.com/notambourine/mdql/releases/download/v0.1.1/mdql_linux_arm64.tar.gz"
+      sha256 "d676b246f15ddaace7cbffc60695eb50822d6964dacf301d40f5e0eae3521a26"
       define_method(:install) do
         bin.install "mdql"
       end
